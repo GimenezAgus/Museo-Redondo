@@ -66,6 +66,7 @@ footer {
 }
 .logo-pr-footer {
     width: 9%;
+    min-width: 6em;
     padding: 3px;
     margin: 5px;
 }
@@ -84,6 +85,7 @@ footer {
     background-repeat: no-repeat;
     grid-template-rows: 15% 15% 1fr;
     justify-items: center;
+    align-items: center;
     min-height: 100vh;
     gap: 20px;
     padding: 15px;
@@ -92,6 +94,7 @@ footer {
 }
 .main-index-logo {
     width: 60%;
+    min-width: 23em;
     padding: 5px;
 }
 .index-links {
@@ -100,7 +103,12 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 70%;
     gap: 2em;
+}
+
+.index-links article {
+    align-self: center;
 }
 .items-cards {
     display: flex;
@@ -109,9 +117,10 @@ footer {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    text-decoration: none;
+    max-width: 8.5em;
     padding: 1px;
     margin: 5px 50px;
-    text-decoration: none;
 }
 .index-text-cards {
     background-color: #2d2c2ce0;
@@ -181,6 +190,69 @@ footer {
 }
 
 /* QUERYS */
-/* Mayores a 992px */
-@media (min-width: 992px) {
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+    /* Header */
+    .logo-pr-header {
+        width: 8em;
+    }
+    /* Index */
+    .titulo-principal {
+        font-size: 2.5em;
+    }
+    .main-index {
+        grid-template-rows: 15% 15% 1fr;
+        min-height: 85vh;
+    }
+    .main-index .titulo-principal {
+        align-self: flex-start;
+    }
+    .main-index-logo {
+        width: 50%;
+    }
+    .index-links {
+        gap: 0.5em;
+    }
+    .index-text-cards {
+        font-size: 1.5em;
+    }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+    /* Header */
+    .logo-pr-header {
+        width: 7em;
+    }
+    /* Index */
+    .main-index {
+        gap: 15px;
+    }
+    .titulo-principal {
+        font-size: 2em;
+    }
+    .index-links {
+        width: 85%;
+    }
+    .index-text-cards {
+        font-size: 1.3em;
+    }
+}
+
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+    /* Header */
+    .logo-pr-header {
+        width: 6em;
+    }
+    /* Index */
+    .main-index {
+        gap: 10px;
+    }
+    .main-index-logo {
+        min-width: 18em;
+        padding: 2px;
+    }
+    .titulo-principal {
+        font-size: 1.7em;
+    }
 }
