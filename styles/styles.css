@@ -137,45 +137,33 @@ footer {
 
 /* Pages */
 /* Historia */
-.timeline {
+/* Inicio Boostrap */
+.card-group {
+    justify-content: center;
+}
+.card {
+    margin: 15px;
+    min-width: 20rem;
+    max-width: 20rem;
+}
+.card-img-top {
+    height: 20rem;
+}
+/* Fin Boostrap */
+.historia_grid .subtitulo-principal {
+    justify-self: center;
+}
+.historia_grid {
+    padding: 10px;
+}
+.historia_cards {
+    max-width: 60%;
+    justify-self: center;
+}
+
+.integrantes_grid {
     display: grid;
-    grid-template-columns: 3px 1fr;
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    margin-left: 15px;
-}
-.timeline-line {
-    background-color: aliceblue;
-    width: 3px;
-    height: 100%;
-    margin: 10px;
-}
-.timeline-content {
-    display: grid;
-    grid-template-areas:
-        "title year"
-        "text text";
-    width: 100%;
-    background-color: #1f1f1f;
-    border: #af242467 solid 2px;
-    border-radius: 5px;
-    color: #fff;
-    padding: 1.75rem;
-    margin: 3px 1rem 1.5rem 1.5rem;
-}
-.timeline-content:hover {
-    border: #af2424 solid 2px;
-}
-.timeline-card-title {
-    grid-area: title;
-}
-.timeline-card-year {
-    grid-area: year;
-    justify-self: self-end;
-}
-.timeline-card-text {
-    grid-area: text;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* Comunidad */
