@@ -25,7 +25,7 @@
         />
         <!-- CSS -->
         <link rel="stylesheet" href="../styles/styles.css" />
-        <title>Historia</title>
+        <title>Biografía</title>
     </head>
     <body>
         <header class="sticky-top">
@@ -65,10 +65,10 @@
                                     Inicio</a
                                 >
                             </li>
-                            <!-- Historia -->
+                            <!-- Biografía -->
                             <li class="nav-item">
-                                <a class="nav-link" href="./historia.html"
-                                    >Historia</a
+                                <a class="nav-link" href="./biografia.html"
+                                    >Biografía</a
                                 >
                             </li>
                             <!-- Recitales -->
@@ -95,16 +95,32 @@
             </nav>
         </header>
         <main>
-            <!-- Titulo Historia -->
-            <h2 class="titulo-principal">HISTORIA</h2>
-            <!-- Subtitulo Línea del tiempo -->
-            <div class="historia_grid">
+            <!-- Indice -->
+            <section class="indice-legado">
+                <!-- Titulo Historia -->
+                <h2 class="titulo-principal">BIOGRAFÍA</h2>
+                <!-- Carta Integrantes -->
+                <a href="#integrantes" class="indice-card indice-card-int">
+                    <h5 class="indice-card-title">Integrantes</h5>
+                </a>
+                <!-- Carta Historia -->
+                <a href="#historia" class="indice-card indice-card-his">
+                    <h5 class="indice-card-title">Historia</h5>
+                </a>
+                <!-- Carta Otros -->
+                <a href="#historia" class="indice-card indice-card-otros">
+                    <h5 class="indice-card-title">Otros</h5>
+                </a>
+            </section>
+            <div class="integrantes_bg" id="integrantes">
                 <!-- Cartas Integrantes -->
-                <section class="historia_cards">
+                <section class="integrantes_cards">
+                    <!-- Sub Titulo Integrantes -->
                     <h2 class="subtitulo-principal">Integrantes</h2>
+                    <!-- Inicio grupo 1 -->
                     <div class="card-group">
                         <!-- Carta Indio Solari -->
-                        <div class="card text-bg-dark">
+                        <div class="integrantes-card card text-bg-dark">
                             <img
                                 src="../assets/img/indio-solari-joven.jpg"
                                 class="card-img-top"
@@ -120,7 +136,7 @@
                             </div>
                         </div>
                         <!-- Carta Skay Beilinson -->
-                        <div class="card text-bg-dark">
+                        <div class="integrantes-card card text-bg-dark">
                             <img
                                 src="../assets/img/skay-beilinson.jpg"
                                 class="card-img-top"
@@ -136,7 +152,7 @@
                             </div>
                         </div>
                         <!-- Carta Sergio Dawi -->
-                        <div class="card text-bg-dark">
+                        <div class="integrantes-card card text-bg-dark">
                             <img
                                 src="../assets/img/sergio-dawi.jpg"
                                 class="card-img-top"
@@ -150,9 +166,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Fin grupo 1 -->
+                    <!-- Inicio grupo 2 -->
                     <div class="card-group">
                         <!-- Carta Semilla Bucciarelli -->
-                        <div class="card text-bg-dark">
+                        <div class="integrantes-card card text-bg-dark">
                             <img
                                 src="../assets/img/semilla-bucciarelli.jpg"
                                 class="card-img-top"
@@ -169,7 +187,7 @@
                             </div>
                         </div>
                         <!-- Carta Walter Sidotti -->
-                        <div class="card text-bg-dark">
+                        <div class="integrantes-card card text-bg-dark">
                             <img
                                 src="../assets/img/walter-sidotti.jpg"
                                 class="card-img-top"
@@ -182,7 +200,62 @@
                                 <p class="card-text">Batería</p>
                             </div>
                         </div>
-                        <div class="card text-bg-dark">
+                        <!-- Carta Willy Crook -->
+                        <div class="integrantes-card card text-bg-dark">
+                            <img
+                                src="../assets/img/willy-crook.jpg"
+                                class="card-img-top"
+                                alt="willy-crook"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Eduardo Guillermo Crook Pantano "Willy
+                                    Crook"
+                                </h5>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Saxofón</p>
+                            </div>
+                        </div>
+                        <!-- Fin grupo 2 -->
+                        <!-- Inicio grupo 3 -->
+                    </div>
+                    <!-- Fin Grupo 2 -->
+                    <!-- Inicio Grupo 3 -->
+                    <div class="card-group">
+                        <!-- Carta Semilla Bucciarelli -->
+                        <div class="integrantes-card card text-bg-dark">
+                            <img
+                                src="../assets/img/semilla-bucciarelli.jpg"
+                                class="card-img-top"
+                                alt="semilla-bucciarelli"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Daniel Fernando Bucciarelli "Semilla
+                                    Bucciarelli"
+                                </h5>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Bajo</p>
+                            </div>
+                        </div>
+                        <!-- Carta Walter Sidotti -->
+                        <div class="integrantes-card card text-bg-dark">
+                            <img
+                                src="../assets/img/walter-sidotti.jpg"
+                                class="card-img-top"
+                                alt="walter-sidotti"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Walter Sidotti</h5>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Batería</p>
+                            </div>
+                        </div>
+                        <!-- Carta Willy Crook -->
+                        <div class="integrantes-card card text-bg-dark">
                             <img
                                 src="../assets/img/willy-crook.jpg"
                                 class="card-img-top"
@@ -199,6 +272,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Fin Grupo 3 -->
                 </section>
             </div>
         </main>
