@@ -1,0 +1,186 @@
+/* Biografía */
+/* Inicio Boostrap */
+.card-img-overlay {
+    padding: 0;
+}
+.card-group {
+    justify-content: center;
+    justify-self: center;
+    width: 85%;
+}
+.integrantes-card {
+    margin: 15px;
+    min-width: 19rem;
+    max-width: 19rem;
+    padding: 5px;
+}
+.card-img-top {
+    height: 75%;
+}
+.scrollspy-example-2 {
+    color: white;
+}
+.integrantes-card .card-body {
+    height: 25%;
+}
+/* Fin Boostrap */
+.indice-legado {
+    background-image: url(../assets/img/fondo-negro-2.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "integrantes historia otros";
+}
+.indice-legado .titulo-principal {
+    grid-area: titulo;
+    align-self: center;
+}
+.indice-card {
+    border: solid 2px #797878;
+    margin: 15px;
+    max-width: 20rem;
+    min-width: 19rem;
+    height: 25rem;
+    text-decoration: none;
+}
+.indice-card-int,
+.indice-card-his,
+.indice-card-otros {
+    background-position: center;
+    background-size: cover;
+}
+.indice-card-int {
+    background-image: url(../assets/img/integrantes-retro-recortada.jpg);
+    grid-area: integrantes;
+}
+.indice-card-his {
+    background-image: url(../assets/img/entrada-luzbelito.jpg);
+    grid-area: historia;
+}
+.indice-card-otros {
+    background-image: url(../assets/img/logo-pr-fondo-negro.jpg);
+    grid-area: otros;
+}
+.indice-card-title {
+    color: #00000000;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+.indice-card :hover {
+    background-color: #00000048;
+    color: #ffffff;
+}
+.integrantes_bg .subtitulo-principal {
+    text-align: center;
+    background-color: #343a40;
+    width: 65%;
+}
+.integrantes_bg {
+    padding: 10px;
+    background-image: url(../assets/img/los-redondos-posando-color.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.integrantes-cards-group {
+    max-width: 85%;
+    justify-self: center;
+}
+.integrantes_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.historia {
+    display: grid;
+    justify-self: center;
+    padding: 10px;
+    max-width: 80%;
+}
+.colscroll {
+    height: 35rem;
+    overflow: scroll;
+}
+.colscroll h4 {
+    font-size: 2rem;
+}
+
+.colscroll p {
+    font-size: 1.2rem;
+}
+
+.historia_parrafo {
+    color: white;
+}
+.historia_scroll {
+    padding: 15px;
+    background-color: #2d2c2c;
+}
+
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+    /* Inicio Boostrap */
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+    /* Fin Boostrap */
+    /* Biografía */
+    .integrantes-cards-group {
+        max-width: 95%;
+    }
+    .indice-card {
+        margin: 10px;
+        min-width: 15rem;
+        height: 20rem;
+    }
+    .integrantes-card {
+        margin: 10px;
+        min-width: 15rem;
+        max-width: 15rem;
+        height: 25rem;
+    }
+}
+
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+    /* Inicio Boostrap */
+    .card-title {
+        font-size: 0.8rem;
+    }
+    .card-text {
+        font-size: 0.7rem;
+    }
+    /* Fin Boostrap */
+    /* Biografia */
+    .indice-legado {
+        grid-template-areas:
+            "titulo titulo"
+            "integrantes historia"
+            "otros otros";
+    }
+    .indice-card {
+        min-width: 13rem;
+        height: 18rem;
+    }
+    .integrantes-card {
+        margin: 5px;
+        min-width: 12rem;
+        max-width: 12rem;
+        height: 20rem;
+    }
+}

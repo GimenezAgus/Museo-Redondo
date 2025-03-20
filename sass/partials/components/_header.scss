@@ -1,0 +1,48 @@
+/* Header */
+/* Inicio Boostrap */
+.navbar-brand {
+    margin: 2px 2px 2px 30px;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.nav-item {
+    padding: 2px 5px;
+    margin: 2px 5px;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav-link {
+    color: #ad3737;
+}
+/* Logo header */
+.logo-pr-header {
+    width: 10em;
+    height: auto;
+}
+/* Fin Boostrap */
+
+/*Media Querys */
+@media (max-width: 991px) {
+    /* Header */
+    .logo-pr-header {
+        width: 8em;
+    }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+    /* Header */
+    .logo-pr-header {
+        width: 7em;
+    }
+}
+
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+    /* Header */
+    .logo-pr-header {
+        width: 6em;
+    }
+}

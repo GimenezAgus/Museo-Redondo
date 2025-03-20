@@ -1,0 +1,21 @@
+// Base
+@import "partials/base/tipografias";
+@import "partials/base/_reset";
+
+// Utilities
+@import "partials/utilities/maps";
+@import "partials/utilities/mixins";
+@import "partials/utilities/variables";
+
+// Components
+@import "partials/components/main";
+@import "partials/components/navbar";
+@import "partials/components/header";
+@import "partials/components/footer";
+
+// Pages
+@import "partials/pages/index";
+@import "partials/pages/biografia";
+@import "partials/pages/comunidad";
+@import "partials/pages/discografia";
+@import "partials/pages/recitales";
