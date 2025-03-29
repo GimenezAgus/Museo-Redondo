@@ -1,70 +1,109 @@
 /* Index */
-.titulo-principal {
-    justify-self: center;
-    color: #ffffff;
-    font-family: "Anton", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3.5em;
-    padding: 10px 3px 3px 3px;
-}
-
 .main-index {
     display: grid;
+    grid-template-rows: 1fr 1fr 1.2fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+.introduction {
     background-image: url(../assets/img/todos-los-discos-fondo.jpg);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    grid-template-rows: 15% 15% 1fr;
-    justify-items: center;
-    align-items: center;
+    mask-image: linear-gradient(black 70%, transparent);
     min-height: 100vh;
-    gap: 20px;
-    padding: 15px;
-    color: #fff;
-    text-align: center;
 }
 .main-index-logo {
     width: 60%;
     min-width: 23em;
     padding: 5px;
 }
+.index-links-bg {
+    display: flex;
+    background-image: linear-gradient(to top, #400b0f27 20%, #f2f2f205, black);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10em;
+    align-items: center;
+    justify-content: center;
+}
 .index-links {
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
     justify-content: center;
-    width: 70%;
-    gap: 2em;
-}
-
-.index-links article {
-    align-self: center;
-}
-.items-cards {
-    display: flex;
-    flex-direction: column-reverse;
+    align-items: center;
     align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-decoration: none;
-    max-width: 8.5em;
-    padding: 1px;
-    margin: 5px 50px;
+    grid-template-areas:
+        "biography biography recitals"
+        " discography community recitals";
+    padding: 10px;
+    gap: 7px;
+    background-color: #80808008;
+    width: 69em;
+    height: 47em;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // Error Sass no me toma los maps
+        // color: map-get($color-theme, absolute-white);
+        color: #f2f2f2b4;
+        border: solid #8c141e46 1px;
+        // Error Sass no me toma los maps
+        // font-size: map-get($font-size, l);
+        font-size: 2em;
+        text-transform: uppercase;
+        font-family: "Anton", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            color: #f2f2f2;
+            border: solid #f2f2f246 1px;
+        }
+    }
 }
-.index-text-cards {
-    background-color: #2d2c2ce0;
-    text-transform: uppercase;
-    border-bottom: solid 3px #ad3737;
-    border-radius: 8px;
-    color: #af2424;
-    font-size: 2em;
-    font-family: "Anton", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 7px;
+.index_biography-link,
+.index_community-link,
+.index_discography-link,
+.index_recitals-link {
+    // Error sass no me toma los maps
+    // border: solid map-get($color-theme, secondary-red) 3px;
+    background-size: cover;
+}
+.index_biography-link {
+    grid-area: biography;
+    background-image: url(../assets/img/indio-skay.jpg);
+    background-position: center;
+    width: 44.5em;
+    height: 22em;
+}
+.index_recitals-link {
+    grid-area: recitals;
+    background-image: url(../assets/img/skay.jpg);
+    background-position: center;
+    width: 22em;
+    height: 45em;
+}
+.index_discography-link {
+    grid-area: discography;
+    background-image: url(../assets/img/gulp.jpg);
+    background-position: center;
+    width: 22em;
+    height: 22.5em;
+}
+.index_community-link {
+    grid-area: community;
+    background-image: url(../assets/img/los-redondos-armados.jpg);
+    background-position: center;
+    // También errror con mixins
+    // @include medidas(22em, 22.55);
+    width: 22em;
+    height: 22.5em;
 }
 
 /* QUERYS */

@@ -1,0 +1,14 @@
+.subtitle {
+    justify-self: center;
+    // Error en Sass no me toma los maps
+    // color: map-get($color-theme, absolute-white);
+    color: #f2f2f2;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    // Error en Sass no me toma los maps
+    // font-size: map-get($font-size, l);
+    font-size: 2.5em;
+    padding: 5px;
+    margin: 5px;
+}

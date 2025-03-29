@@ -1,21 +1,23 @@
 // Base
-@import "partials/base/tipografias";
-@import "partials/base/_reset";
+@use "partials/base/tipografias";
+@use "partials/base/_reset";
 
 // Utilities
-@import "partials/utilities/maps";
-@import "partials/utilities/mixins";
-@import "partials/utilities/variables";
+@use "partials/utilities/maps";
+@use "partials/utilities/mixins";
+@use "partials/utilities/variables";
 
 // Components
-@import "partials/components/main";
-@import "partials/components/navbar";
-@import "partials/components/header";
-@import "partials/components/footer";
+@use "partials/components/main";
+@use "partials/components/navbar";
+@use "partials/components/footer";
+@use "partials/components/main-title";
+@use "partials/components/subtitle";
+@use "partials/components/paragraph";
 
 // Pages
-@import "partials/pages/index";
-@import "partials/pages/biografia";
-@import "partials/pages/comunidad";
-@import "partials/pages/discografia";
-@import "partials/pages/recitales";
+@use "partials/pages/index";
+@use "partials/pages/biografia";
+@use "partials/pages/comunidad";
+@use "partials/pages/discografia";
+@use "partials/pages/recitales";

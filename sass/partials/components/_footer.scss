@@ -5,8 +5,10 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    // Error Sass no me toma los maps
+    // background-color: map-get($color-theme, absolute-black);
+    background-color: #0d0d0d;
     height: 5rem;
-    background-color: #2d2c2c;
 }
 .logo-pr-footer {
     width: 9%;
@@ -18,5 +20,7 @@ footer {
     font-size: 0.7em;
     padding: 3px;
     margin: 5px;
-    color: #fff;
+    // Error Sass no me toma los maps
+    // color: map-get($color-theme, absolute-white);
+    color: #f2f2f2;
 }
