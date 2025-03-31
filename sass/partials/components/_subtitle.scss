@@ -6,9 +6,29 @@
     font-family: "Anton", serif;
     font-weight: 400;
     font-style: normal;
+    text-transform: uppercase;
     // Error en Sass no me toma los maps
     // font-size: map-get($font-size, l);
     font-size: 2.5em;
     padding: 5px;
     margin: 5px;
+}
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+    .subtitle {
+        font-size: 2.2em;
+    }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+    .subtitle {
+        font-size: 1.5em;
+    }
+}
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+    .subtitle {
+        font-size: 1.2em;
+    }
 }

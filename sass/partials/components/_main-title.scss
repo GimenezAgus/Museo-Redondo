@@ -11,3 +11,23 @@
     font-size: 3.5em;
     padding: 10px 3px 3px 3px;
 }
+
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+    .main-title {
+        font-size: 2.5em;
+    }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 2em;
+    }
+}
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+    .main-title {
+        font-size: 1.7em;
+    }
+}

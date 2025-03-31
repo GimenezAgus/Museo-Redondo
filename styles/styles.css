@@ -101,38 +101,230 @@ footer {
   padding: 10px 3px 3px 3px;
 }
 
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+  .main-title {
+    font-size: 2.5em;
+  }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 2em;
+  }
+}
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+  .main-title {
+    font-size: 1.7em;
+  }
+}
 .subtitle {
   justify-self: center;
   color: #f2f2f2;
   font-family: "Anton", serif;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
   font-size: 2.5em;
   padding: 5px;
   margin: 5px;
 }
 
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+  .subtitle {
+    font-size: 2.2em;
+  }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+  .subtitle {
+    font-size: 1.5em;
+  }
+}
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+  .subtitle {
+    font-size: 1.2em;
+  }
+}
 .paragraph {
   color: #f2f2f2;
   font-size: 1.5em;
+  margin: 5px;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+  .paragraph {
+    font-size: 1.2em;
+  }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+  .paragraph {
+    font-size: 1em;
+  }
+}
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+  .paragraph {
+    font-size: 0.9em;
+  }
+}
+.index-links-bg {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 5% 55% 5%;
+  grid-template-rows: 90% 5%;
+  background-image: linear-gradient(to top, rgba(64, 11, 15, 0.1529411765) 20%, rgba(242, 242, 242, 0.0196078431) 90%, black);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10em;
+}
+
+.vertical-lr-text,
+.vertical-rl-text,
+.horizontal-text {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: rgba(128, 128, 128, 0.1019607843);
+}
+
+.vertical-lr-text {
+  writing-mode: sideways-lr;
+  justify-self: self-end;
+}
+
+.vertical-rl-text {
+  writing-mode: sideways-rl;
+  justify-self: self-end;
+}
+
+.index-links-box {
+  display: grid;
+  align-items: center;
+  align-content: stretch;
+  grid-template-areas: "biography biography recitals" " discography community recitals";
+  padding: 10px;
+  gap: 7px;
+  background-color: rgba(128, 128, 128, 0.031372549);
+  width: 100%;
+  height: 100%;
+}
+
+.index-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f2f2f2;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid rgba(140, 20, 30, 0.2745098039) 1px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+.index-link:hover {
+  border: solid rgba(242, 242, 242, 0.2745098039) 1px;
+}
+
+.index_biography-link,
+.index_community-link,
+.index_discography-link,
+.index_recitals-link {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.index_biography-link {
+  grid-area: biography;
+  background-image: url(../assets/img/indio-skay.jpg);
+  background-position: center;
+}
+
+.index_recitals-link {
+  grid-area: recitals;
+  background-image: url(../assets/img/skay.jpg);
+  background-position: left;
+}
+
+.index_discography-link {
+  grid-area: discography;
+  background-image: url(../assets/img/gulp.jpg);
+  background-position: center;
+}
+
+.index_community-link {
+  grid-area: community;
+  background-image: url(../assets/img/los-redondos-armados.jpg);
+  background-position: center;
+}
+
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+  .index-links-bg {
+    grid-template-columns: 5% 65% 5%;
+  }
+  .vertical-lr-text,
+  .vertical-rl-text,
+  .horizontal-text {
+    font-size: 1.2em;
+  }
+  .index-link {
+    font-size: 1.5em;
+  }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+  .index-links-bg {
+    grid-template-columns: 5% 72% 5%;
+    grid-template-rows: 85% 5%;
+    padding-bottom: 7em;
+  }
+  .vertical-lr-text,
+  .vertical-rl-text,
+  .horizontal-text {
+    font-size: 0.9em;
+  }
+  .index-link {
+    font-size: 1.2em;
+  }
+}
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+  .index-links-bg {
+    grid-template-columns: 5% 80% 5%;
+    grid-template-rows: 80% 5%;
+  }
+}
 /* Index */
 .main-index {
   display: grid;
-  grid-template-rows: 1fr 1fr 1.2fr;
+  grid-template-rows: 1fr 0.3fr 1fr;
   justify-items: center;
-  align-items: center;
   text-align: center;
   padding: 25px 0 0 0;
 }
 
 .introduction {
   background-image: url(../assets/img/todos-los-discos-fondo.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   mask-image: linear-gradient(black 70%, transparent);
@@ -145,97 +337,26 @@ footer {
   padding: 5px;
 }
 
-.index-links-bg {
-  display: flex;
-  background-image: linear-gradient(to top, rgba(64, 11, 15, 0.1529411765) 20%, rgba(242, 242, 242, 0.0196078431), black);
-  width: 100%;
-  height: 100%;
-  padding-bottom: 10em;
-  align-items: center;
-  justify-content: center;
-}
-
-.index-links {
+.welcome {
   display: grid;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  grid-template-areas: "biography biography recitals" " discography community recitals";
-  padding: 10px;
-  gap: 7px;
-  background-color: rgba(128, 128, 128, 0.031372549);
-  width: 69em;
-  height: 47em;
-}
-.index-links a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(242, 242, 242, 0.7058823529);
-  border: solid rgba(140, 20, 30, 0.2745098039) 1px;
-  font-size: 2em;
-  text-transform: uppercase;
-  font-family: "Anton", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  padding: 5px;
+  align-content: end;
   width: 100%;
   height: 100%;
 }
-.index-links a:hover {
-  color: #f2f2f2;
-  border: solid rgba(242, 242, 242, 0.2745098039) 1px;
-}
 
-.index_biography-link,
-.index_community-link,
-.index_discography-link,
-.index_recitals-link {
-  background-size: cover;
-}
-
-.index_biography-link {
-  grid-area: biography;
-  background-image: url(../assets/img/indio-skay.jpg);
-  background-position: center;
-  width: 44.5em;
-  height: 22em;
-}
-
-.index_recitals-link {
-  grid-area: recitals;
-  background-image: url(../assets/img/skay.jpg);
-  background-position: center;
-  width: 22em;
-  height: 45em;
-}
-
-.index_discography-link {
-  grid-area: discography;
-  background-image: url(../assets/img/gulp.jpg);
-  background-position: center;
-  width: 22em;
-  height: 22.5em;
-}
-
-.index_community-link {
-  grid-area: community;
-  background-image: url(../assets/img/los-redondos-armados.jpg);
-  background-position: center;
-  width: 22em;
-  height: 22.5em;
+.welcome-p {
+  padding-top: 5px;
+  margin-bottom: 3px;
+  border-top: solid rgba(140, 20, 30, 0.2745098039) 2px;
+  text-transform: uppercase;
 }
 
 /* QUERYS */
 /* LG Menores a 991px */
 @media (max-width: 991px) {
   /* Index */
-  .titulo-principal {
-    font-size: 2.5em;
-  }
   .main-index {
-    grid-template-rows: 15% 15% 1fr;
     min-height: 85vh;
   }
   .main-index .titulo-principal {
@@ -247,18 +368,12 @@ footer {
   .index-links {
     gap: 0.5em;
   }
-  .index-text-cards {
-    font-size: 1.5em;
-  }
 }
 /* MD Menores a 767px */
 @media (max-width: 767px) {
   /* Index */
   .main-index {
     gap: 15px;
-  }
-  .titulo-principal {
-    font-size: 2em;
   }
   .index-links {
     width: 85%;
@@ -276,9 +391,6 @@ footer {
   .main-index-logo {
     min-width: 18em;
     padding: 2px;
-  }
-  .titulo-principal {
-    font-size: 1.7em;
   }
 }
 /* Biografía */

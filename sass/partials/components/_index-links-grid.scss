@@ -1,0 +1,141 @@
+.index-links-bg {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 5% 55% 5%;
+    grid-template-rows: 90% 5%;
+    background-image: linear-gradient(
+        to top,
+        #400b0f27 20%,
+        #f2f2f205 90%,
+        black
+    );
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10em;
+}
+.vertical-lr-text,
+.vertical-rl-text,
+.horizontal-text {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #8080801a;
+}
+.vertical-lr-text {
+    writing-mode: sideways-lr;
+    justify-self: self-end;
+}
+.vertical-rl-text {
+    writing-mode: sideways-rl;
+    justify-self: self-end;
+}
+.index-links-box {
+    display: grid;
+    align-items: center;
+    align-content: stretch;
+    grid-template-areas:
+        "biography biography recitals"
+        " discography community recitals";
+    padding: 10px;
+    gap: 7px;
+    background-color: #80808008;
+    width: 100%;
+    height: 100%;
+}
+.index-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    // Error Sass no me toma los maps
+    // color: map-get($color-theme, absolute-white);
+    color: #f2f2f2;
+    // Error Sass no me toma los maps
+    // font-size: map-get($font-size, l);
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid #8c141e46 1px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    &:hover {
+        border: solid #f2f2f246 1px;
+    }
+}
+.index_biography-link,
+.index_community-link,
+.index_discography-link,
+.index_recitals-link {
+    // Error sass no me toma los maps
+    // border: solid map-get($color-theme, secondary-red) 3px;
+    background-size: cover;
+    // También errror con mixins
+    // @include medidas(100%, 100%);
+    width: 100%;
+    height: 100%;
+}
+.index_biography-link {
+    grid-area: biography;
+    background-image: url(../assets/img/indio-skay.jpg);
+    background-position: center;
+}
+.index_recitals-link {
+    grid-area: recitals;
+    background-image: url(../assets/img/skay.jpg);
+    background-position: left;
+}
+.index_discography-link {
+    grid-area: discography;
+    background-image: url(../assets/img/gulp.jpg);
+    background-position: center;
+}
+.index_community-link {
+    grid-area: community;
+    background-image: url(../assets/img/los-redondos-armados.jpg);
+    background-position: center;
+}
+
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+    .index-links-bg {
+        grid-template-columns: 5% 65% 5%;
+    }
+    .vertical-lr-text,
+    .vertical-rl-text,
+    .horizontal-text {
+        font-size: 1.2em;
+    }
+    .index-link {
+        font-size: 1.5em;
+    }
+}
+
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+    .index-links-bg {
+        grid-template-columns: 5% 72% 5%;
+        grid-template-rows: 85% 5%;
+        padding-bottom: 7em;
+    }
+    .vertical-lr-text,
+    .vertical-rl-text,
+    .horizontal-text {
+        font-size: 0.9em;
+    }
+    .index-link {
+        font-size: 1.2em;
+    }
+}
+
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+    .index-links-bg {
+        grid-template-columns: 5% 80% 5%;
+        grid-template-rows: 80% 5%;
+    }
+}

@@ -1,7 +1,28 @@
 .paragraph {
     color: #f2f2f2;
     font-size: 1.5em;
+    margin: 5px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+/* QUERYS */
+/* LG Menores a 991px */
+@media (max-width: 991px) {
+    .paragraph {
+        font-size: 1.2em;
+    }
+}
+/* MD Menores a 767px */
+@media (max-width: 767px) {
+    .paragraph {
+        font-size: 1em;
+    }
+}
+/* SM Menores a 575px */
+@media (max-width: 575px) {
+    .paragraph {
+        font-size: 0.9em;
+    }
 }
