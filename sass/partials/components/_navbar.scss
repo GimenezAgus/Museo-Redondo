@@ -4,7 +4,7 @@
 .navbar {
     // Error en sass no me toma los maps
     // background-color: map-get($color-theme, absolute-black);
-    background-color: #0d0d0d;
+    background-color: #0d0d0d !important;
 }
 .navbar-brand {
     margin: 2px 2px 2px 30px;
